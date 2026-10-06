@@ -1,0 +1,32 @@
+Prueba real en una segunda clonacion de GitHub (entorno Linux de asistencia)
+Directorio: /workspace/scratch/b084d8a303c6/examen-1-reproducibilidad
+Commit analizado: c64b5cbf3efb5c09cf6bd939946bd70f864c1710
+
+Comandos: python3 -m venv .venv; source .venv/bin/activate; python -m pip install -r requirements.txt; python analisis.py
+Python 3.12.14
+Registros: 100,000
+Sensores distintos: 40
+
+Temperatura promedio por planta:
+  Planta_1: 66.6163 grados C
+  Planta_2: 66.5350 grados C
+  Planta_3: 66.7658 grados C
+  Planta_4: 66.6690 grados C
+
+Temperatura maxima: 104.99 grados C
+  Sensor S023 | Fecha 01/09/26 22:23 | Planta_3 | Registro 53743
+  Sensor S019 | Fecha 02/09/26 13:11 | Planta_2 | Registro 89259
+  Sensor S014 | Fecha 02/09/26 15:23 | Planta_2 | Registro 94534
+  Sensor S030 | Fecha 02/09/26 16:02 | Planta_3 | Registro 96110
+
+Lecturas con temperatura mayor que 85 grados C: 6,954
+Alertas por planta:
+  Planta_1: 1737
+  Planta_2: 1708
+  Planta_3: 1777
+  Planta_4: 1732
+Planta(s) con mas alertas: Planta_3 (1777 cada una)
+
+Archivo exportado: alertas.csv (carpeta resultados)
+
+Comparacion de alertas.csv: sin diferencias

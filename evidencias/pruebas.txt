@@ -1,0 +1,5 @@
+PASS: CSV original identico; exportacion completa, exacta y con columnas originales.
+PASS: 85 exactos excluido, maximos empatados y plantas empatadas incluidos.
+PASS: caso sin alertas conserva encabezados y muestra empate en cero.
+PASS: CSV sin registros se maneja sin fallo.
+Auditoria automatica finalizada correctamente.
