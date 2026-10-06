@@ -26,15 +26,15 @@ La revisión se realizó con el CSV original y la copia descargada desde GitHub.
 | Analíticas | Dos hallazgos reales con valores, pregunta predictiva y datos adicionales, acción prescriptiva condicionada. |
 | Advertencia sobre el umbral | Aclara que una alerta didáctica no demuestra una falla. |
 | Acceso docente | El repositorio es público; confirmar que el docente recibe la URL. |
-| Datos del alumno | Nombre incluido; grupo pendiente de confirmar. |
+| Datos del alumno | Nombre incluido; grupo IDIA 224 confirmado por el alumno. |
 
 ## Pasos pendientes en la computadora del alumno
 
-1. Confirmar el grupo en informe.md.
+1. Grupo confirmado: IDIA 224, ya registrado en informe.md.
 2. Seguir los comandos de Windows del README para clonar y ejecutar el proyecto.
 3. Seguir la sección de reproducibilidad para crear la segunda copia con otro entorno.
 4. Tomar una captura real con la ruta de examen-1-reproducibilidad, el comando y los resultados visibles. Guardarla como evidencias/reproducibilidad_windows.png. Si hace falta, usar dos capturas para incluir toda la salida.
-5. Subir la captura y la corrección del grupo a GitHub. No subir .venv/.
+5. Subir la captura a GitHub. No subir .venv/.
 6. Entregar la URL y volver a revisar esta auditoría.
 
 Los commits y las ejecuciones aquí documentados fueron realizados con asistencia. La prueba Linux no acredita que el alumno ya haya ejecutado los comandos en su propia computadora.
