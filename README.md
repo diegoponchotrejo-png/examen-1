@@ -1,5 +1,10 @@
 # Análisis de sensores industriales
 
+**Integrantes:**
+
+- Diego Alfonso Trejo Arellano
+- Franco Ignacio del Toro Fernández
+
 Proyecto del primer parcial. El objetivo es analizar las temperaturas de cuatro plantas, identificar alertas y relacionar los resultados con los fundamentos de Big Data.
 
 ## Datos
