@@ -4,7 +4,7 @@ Proyecto del primer parcial. El objetivo es analizar las temperaturas de cuatro 
 
 ## Datos
 
-El archivo `data/sensores_industriales.csv` contiene **datos simulados**, no mediciones reales de una empresa. El archivo entregado contiene 100,000 registros de 40 sensores distribuidos en cuatro plantas (25,000 registros por planta). Las fechas van del 1 de septiembre de 2026 a las 00:00 al 2 de septiembre de 2026 a las 17:39. Se interpreta la fecha como día/mes/año.
+El archivo `data/sensores_industriales.csv` contiene **datos simulados**, no mediciones reales de una empresa. Tiene 100,000 registros de 40 sensores distribuidos en cuatro plantas (25,000 registros por planta). Las fechas van del 1 de septiembre de 2026 a las 00:00 al 2 de septiembre de 2026 a las 17:39. Se interpreta la fecha como día/mes/año.
 
 | Columna | Descripción |
 |---|---|
@@ -19,7 +19,7 @@ La regla didáctica de alerta es **temperatura > 85 °C**. Una lectura igual a 8
 
 ## Requisitos
 
-Git y Python 3.10 o posterior. Se utiliza exclusivamente la biblioteca estándar (`csv`, `collections`, `decimal` y `pathlib`), por lo que **no se necesitan dependencias externas**. `requirements.txt` contiene una aclaración y su instalación no agrega paquetes. No hay versiones de paquetes externos que fijar.
+Git y Python 3.10 o posterior. Se utiliza exclusivamente la biblioteca estándar (`csv`, `collections`, `decimal` y `pathlib`), por lo que **no se necesitan dependencias externas**. `requirements.txt` contiene una aclaración y su instalación no agrega paquetes. 
 
 ## Instalación y ejecución en Windows (PowerShell)
 
@@ -58,7 +58,7 @@ En Linux se requiere que la instalación de Python incluya el módulo `venv`.
 
 ## Resultados y archivos
 
-`analisis.py` calcula todos los resultados a partir del CSV; no contiene resultados precargados. Muestra registros, sensores distintos, promedios, todas las lecturas empatadas en el máximo y todas las plantas empatadas en alertas. Exporta las lecturas con alerta a `resultados/alertas.csv`, manteniendo las columnas y valores originales, sin columna de índice. Crear la carpeta de resultados y sobrescribir la exportación es parte de cada ejecución.
+`analisis.py` lee el CSV y calcula los resultados. Muestra registros, sensores distintos, promedios, todas las lecturas empatadas en el máximo y todas las plantas empatadas en alertas. Exporta las lecturas con alerta a `resultados/alertas.csv`, manteniendo las columnas y valores originales, sin columna de índice. En cada ejecución se actualiza ese archivo.
 
 Las rutas son relativas a la ubicación del programa; no dependen de una carpeta personal. Los promedios se muestran con cuatro decimales y los cálculos usan `Decimal`.
 
@@ -66,7 +66,7 @@ Las rutas son relativas a la ubicación del programa; no dependen de una carpeta
 - `analisis.py`: programa de análisis.
 - `resultados/alertas.csv`: exportación calculada.
 - `informe.md`: respuestas de los apartados 5 al 9, con diagramas.
-- `requirements.txt`: declaración de ausencia de dependencias externas.
+- `requirements.txt`: aclaración sobre las dependencias.
 - `.gitignore`: excluye `.venv/`, `__pycache__/` y archivos `.pyc`.
 - `evidencias/`: evidencia de reproducibilidad y auditoría.
 
@@ -100,7 +100,7 @@ python analisis.py
 git diff --exit-code -- resultados/alertas.csv
 ```
 
-El último comando no debe mostrar diferencias y debe terminar correctamente. Guardar una captura con la ruta de la segunda copia y la salida del programa en `evidencias/`. La prueba en otro entorno no sustituye realizar estos pasos en la computadora del alumno si el docente lo exige.
+Si el último comando no muestra nada, el archivo generado coincide con el publicado. La captura de la ejecución en Windows está en [evidencias/reproducibilidad_windows.png](evidencias/reproducibilidad_windows.png).
 
 ## Historial
 
@@ -108,4 +108,4 @@ El último comando no debe mostrar diferencias y debe terminar correctamente. Gu
 git log --oneline
 ```
 
-El historial registra por separado configuración y datos, análisis, informe y documentación/verificación. El repositorio es público para facilitar la revisión del docente.
+Este comando muestra los cambios guardados durante el proyecto. El repositorio es público.
