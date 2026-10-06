@@ -1,7 +1,7 @@
 # Informe: análisis de sensores industriales
 
 **Nombre:** Diego Alfonso Trejo Arellano  
-**Grupo:** __________________  
+**Grupo:** IDIA 224  
 **Fecha:** 5 de octubre de 2026
 
 ## 5. Las 5 V aplicadas al proyecto
