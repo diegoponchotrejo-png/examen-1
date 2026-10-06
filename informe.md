@@ -1,6 +1,10 @@
 # Informe: análisis de sensores industriales
 
-**Nombre:** Diego Alfonso Trejo Arellano  
+**Integrantes:**
+
+- Diego Alfonso Trejo Arellano
+- Franco Ignacio del Toro Fernández
+
 **Grupo:** IDIA 224  
 **Fecha:** 5 de octubre de 2026
 
@@ -33,9 +37,9 @@ Con miles de sensores enviando datos cada segundo, el problema sería guardar y 
 
 El análisis es **batch**: el programa lee un archivo que ya está guardado y entrega los resultados al terminar.
 
-Para avisar pocos segundos después de recibir una temperatura mayor que 85 °C, usaría **streaming**. Cada lectura se revisa conforme llega y, si supera el límite, se genera la alerta. También habría que controlar las lecturas repetidas y las que lleguen con retraso.
+Para avisar pocos segundos después de recibir una temperatura mayor que 85 °C, usaríamos **streaming**. Cada lectura se revisa conforme llega y, si supera el límite, se genera la alerta. También habría que controlar las lecturas repetidas y las que lleguen con retraso.
 
-Para el resumen diario usaría **batch**, calculando los promedios, máximos y alertas de cada planta al cierre del día. Este resultado puede esperar; una alerta inmediata no. Habría que fijar el horario de cierre y decidir cómo incluir las lecturas que lleguen tarde.
+Para el resumen diario usaríamos **batch**, calculando los promedios, máximos y alertas de cada planta al cierre del día. Este resultado puede esperar; una alerta inmediata no. Habría que fijar el horario de cierre y decidir cómo incluir las lecturas que lleguen tarde.
 
 ## 8. Lambda y Kappa
 
