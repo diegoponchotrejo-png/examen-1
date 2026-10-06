@@ -1,6 +1,6 @@
-# Auditoría contra la consigna
+# Revisión final del proyecto
 
-La revisión se realizó con el CSV original y la copia descargada desde GitHub. Esta auditoría no asigna una calificación: la evaluación corresponde al docente.
+Esta lista reúne los requisitos del examen y dónde se comprobó cada uno.
 
 | Requisito | Estado y evidencia |
 |---|---|
@@ -28,12 +28,12 @@ La revisión se realizó con el CSV original y la copia descargada desde GitHub.
 | Acceso docente | El repositorio es público; confirmar que el docente recibe la URL. |
 | Datos del alumno | Nombre incluido; grupo IDIA 224 confirmado por el alumno. |
 
-## Cierre de reproducibilidad en Windows
+## Ejecución en Windows
 
-El alumno proporcionó la salida de la primera clonación y ejecución en Windows y una captura de la ejecución en `C:\Users\alfon\examen-1-reproducibilidad`. La captura muestra `.venv` activo, `Get-Location`, `python analisis.py` y los resultados completos, coincidentes con los verificados. Está guardada sin modificaciones en [reproducibilidad_windows.png](reproducibilidad_windows.png).
+La primera ejecución en Windows terminó correctamente. La [captura de la segunda copia](reproducibilidad_windows.png) muestra la carpeta `examen-1-reproducibilidad`, el entorno `.venv` activo y todos los resultados.
 
-La comparación byte a byte de la exportación se realizó en el entorno Linux de asistencia. La captura de Windows acredita la ejecución y sus resultados visibles; no muestra el comando de comparación de archivos.
+La exportación también se comparó en Linux y coincidió con la publicada. La captura de Windows muestra la ejecución, pero no la comparación de archivos.
 
-Nombre y grupo IDIA 224 confirmados. Código, documentación, CSV, exportación y captura se encuentran publicados. Queda entregar al docente la URL del repositorio.
+El proyecto incluye el nombre, el grupo IDIA 224 y los archivos de entrega. Solo queda enviar la URL al docente.
 
-Los commits y las pruebas automatizadas se realizaron con asistencia; la captura de Windows fue proporcionada por el alumno.
+El proyecto se preparó con asistencia; la captura corresponde a la ejecución del alumno en Windows.
